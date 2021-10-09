@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/icons8-new-company-50.png">
+    <title>Register Page</title>
+    <style>
+      /* .img123{
+        height: 300px;
+        width: 400px;
+      } */
+    </style>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <img src="img/a.png">
+            <img src="img/s.png">
+  
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"> <strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html" ><strong>About</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="register.html"  style="color: white;" > <strong>Register</strong> </a>
+        </li>
+    </ul>
+      </nav>
+      
+
+
+    <!-- navbar end -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8" style="border:5px solid black; padding:10px">
+      <form action="action_page.php">
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
+      
+    </div>
+    <div class="col-md-4">
+      <img src="img/pport5.jpg" style="width: 100%; height: 750px;">
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- ======= Portfolio Section ======= -->
+
+<!-- <section id="portfolio">
+  <div class="container-fluid wrapper">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2 class="section-heading">Portfolio</h2>
+              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</h3>
+          </div>
+            </div>
+          <div class="col-xs-12 col-md-12 portfolio-submenu text-center">
+              <ul class="filter">
+                  <li><a class="active" href="#" data-filter="*">All</a></li>
+                  <li><a href="#" data-filter=".app">App</a></li>
+                  <li><a href="#" data-filter=".web">Web </a></li>
+                  <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
+                  
+              </ul>
+              /#portfolio-filter
+          </div>
+      </div>
+  </div>
+  <div class="portfolio-wrapper portfolio-container-fluid">
+      <div class="portfolio-items">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid  app">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Wine Label</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port1.jpg" class="img-responsive img123"  id="img-protfolio" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid web ">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Business Card</h4>
+                              <h5>Stationary</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port2.jpg" class="img-responsive img123" id="img-protfolio" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid app web">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Logo Design</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port3.jpg" class="img-responsive img123" id="img-protfolio" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid web app graphic">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Logo Design</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port4.jpg" class="img-responsive img123" id="img-protfolio" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid web graphic">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Web Design</h4>
+                              <h5>Web Design</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/pport5.jpg"id="img-protfolio" class="img-responsive img123" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid web app graphic">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Packageing and Label Design</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port6.jpg" id="img-protfolio" class="img-responsive img123" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid app graphic">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Logo Design</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port7.jpg" id="img-protfolio" class="img-responsive img123" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 work-grid web graphic">
+              <div class="portfolio-item">
+                  <div class="hover-bg">
+                      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                          <div class="hover-text">
+                              <h4>Book Cover</h4>
+                              <h5>Branding</h5>
+                              <div class="clearfix"></div>
+                              <i class="fa fa-plus"></i>
+                          </div>
+                          <img src="img/port8.jpg" id="img-protfolio" class="img-responsive img123" alt="portfolio-image">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> -->
+ <section id="portfolio" class="portfolio"> 
+  <div class="container" data-aos="fade-up">
+  
+       
+      <div class="text-center">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-12 d-flex justify-content-center">
+            
+            <ul id="portfolio-flters">
+              <li> <a  href="#" data-filter="*" class="filter-active"> All </a></li>
+              <li> <a href="#portfoliomodel1" data-filter=".filter-app">App </a></li>
+              <li> <a href="#portfoliomodel2" data-filter=".filter-card">Card </a></li>
+              <li > <a href="#portfoliomodel3" data-filter=".filter-web">Web </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" id="portfoliomodel1">
+              <img src="img/port1.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="img/port1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" id="portfoliomodel3">
+              <img src="img/port8.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/port8.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" id="portfoliomodel1">
+              <img src="img/port3.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="img/port3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" id="portfoliomodel2">
+              <img src="img/port6.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="img/port6.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" id="portfoliomodel3">
+              <img src="img/port9.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/port9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" id="portfoliomodel1">
+              <img src="img/port7.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="img/port7.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" id="portfoliomodel2">
+              <img src="img/port2.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="img/port2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap" id="portfoliomodel2" >
+              <img src="img/pport5.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="img/pport5.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" id="portfoliomodel3">
+              <img src="img/port4.jpg" class="img" alt="" style=" height: 300px;
+              width: 400px;">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="img/port4.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    
+    
+</div>
+</section> -->
+<!-- End Portfolio Section -->
+
+
+<!-- footer start -->
+    <!-- Footer -->
+    <footer class="bg-dark page-footer font-small ">
+
+      <!-- Footer Elements -->
+      <div class="container">
+    
+        <!-- Grid row-->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-12 ">
+            <div class="flex-center" style="text-align: center; margin-top: 20px;">
+    
+              <!-- Facebook -->
+              <a class="fb-ic" style="margin: 20px;" href="https://www.facebook.com/"  target="_blank"> 
+                <!-- <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> -->
+                <img src="img/icons8-facebook-48.png" > 
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic" style="margin: 20px;" href="https://twitter.com/"  target="_blank">
+                <!-- <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> -->
+                <img src="img/icons8-twitter-circled-48.png"> 
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic" style="margin: 20px;" href="https://developers.google.com/web/showcase/2015/googleplus"  target="_blank">
+                <!-- <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> -->
+                <img src="img/icons8-google-plus-48.png"> 
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic" style="margin: 20px;" href="https://www.linkedin.com/"  target="_blank" >
+                <!-- <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> -->
+                <img src="img/icons8-linkedin-circled-48.png"> 
+              </a>
+              <!--Instagram-->
+              <!-- <a class="ins-ic text-center">
+          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                <img src="img/icons8-instagram-96.png"> 
+              </a> -->
+              <!--Pinterest-->
+              <a class="pin-ic" style="margin: 20px;" href="https://in.pinterest.com/" target="_blank">
+                <!-- <i class="fab fa-pinterest "> </i> -->
+                <img src="img/icons8-pinterest-48.png">
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row-->
+    
+      </div>
+      <!-- Footer Elements -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: white; font-size: 20px;">© 2021 Copyright:
+        <a href="https://mdbootstrap.com/"> Amruta </a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+
+    
+
+</body>
+</html>
